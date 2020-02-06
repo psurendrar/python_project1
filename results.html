@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Reg. Details</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">Vehicle Details</div>
+
+   <table cellspacing="0">
+
+         {% for review in reviews %}
+      <tr>
+        <tr>
+          <td>Registration No : {{review['Registration No']}}</td>
+        <tr>
+
+         <tr>
+         <td>Reg date : {{review['Reg date']}}</td>
+         <tr>
+
+         <tr>
+         <td>chassis No : {{review['chassis No']}}</td>
+         <tr>
+
+         <tr>
+         <td>Engin No : {{review['Engin No']}}</td>
+         <tr>
+
+         <tr>
+         <td>Owner Name : {{review['Owner Name']}}
+         <tr>
+
+          <tr>
+          <td>Fuel Type : {{review['Fuel Type']}}</td>
+          <tr>
+
+         <tr>
+         <td>Fitness Upto : {{review['Fitness Upto']}}</td>
+         <tr>
+
+         <tr>
+         <td>Insurance Upto : {{review['Insurance Upto']}}</td>
+         <tr>
+
+         <tr>
+         <td>Fuel Norms : {{review['Fuel Norms']}} </td>
+         <tr>
+
+          <tr>
+          <td>Road tax paid upto : {{review['Road tax paid upto']}}</td>
+          <tr>
+
+         <tr>
+         <td>Vehicle Class : {{review['Vehicle Class']}}</td>
+         <tr>
+
+
+       {% endfor %}
+   </table>
+</div>
+
+
+
+</body>
+
+</html>
