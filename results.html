@@ -22,53 +22,69 @@
    <table cellspacing="0">
 
          {% for review in reviews %}
-      <tr>
+       <tbody>
         <tr>
-          <td>Registration No : {{review['Registration No']}}</td>
+            <th>Registration No :</th>
+            <td>{{review['Registration No']}}</td>
         <tr>
 
          <tr>
-         <td>Reg date : {{review['Reg date']}}</td>
+            <th>Reg date :</th>
+            <td>{{review['Reg date']}}</td>
          <tr>
 
          <tr>
-         <td>chassis No : {{review['chassis No']}}</td>
+            <th>chassis No :</th>
+            <td>{{review['chassis No']}}</td>
          <tr>
 
          <tr>
-         <td>Engin No : {{review['Engin No']}}</td>
+            <th>Engin No :</th>
+            <td>{{review['Engin No']}}</td>
          <tr>
 
          <tr>
-         <td>Owner Name : {{review['Owner Name']}}
-         <tr>
-
-          <tr>
-          <td>Fuel Type : {{review['Fuel Type']}}</td>
-          <tr>
-
-         <tr>
-         <td>Fitness Upto : {{review['Fitness Upto']}}</td>
-         <tr>
-
-         <tr>
-         <td>Insurance Upto : {{review['Insurance Upto']}}</td>
-         <tr>
-
-         <tr>
-         <td>Fuel Norms : {{review['Fuel Norms']}} </td>
+            <th>Owner Name :</th>
+            <td>{{review['Owner Name']}}
          <tr>
 
           <tr>
-          <td>Road tax paid upto : {{review['Road tax paid upto']}}</td>
+            <th>Fuel Type :</th>
+            <td>{{review['Fuel Type']}}</td>
           <tr>
 
          <tr>
-         <td>Vehicle Class : {{review['Vehicle Class']}}</td>
+            <th>Fitness Upto :</th>
+            <td>{{review['Fitness Upto']}}</td>
          <tr>
 
+         <tr>
+            <th>Insurance Upto :</th>
+            <td>{{review['Insurance Upto']}}</td>
+         <tr>
+
+         <tr>
+            <th>Fuel Norms :</th>
+            <td>{{review['Fuel Norms']}} </td>
+         <tr>
+
+          <tr>
+            <th>Road tax paid upto :</th>
+            <td>{{review['Road tax paid upto']}}</td>
+          <tr>
+
+         <tr>
+            <th>Vehicle Class :</th>
+            <td>{{review['Vehicle Class']}}</td>
+         <tr>
+
+         <tr>
+            <th>Maker/Model :</th>
+            <td>{{review['Maker/Model']}}</td>
+         <tr>
 
        {% endfor %}
+       </tbody>
    </table>
 </div>
 
