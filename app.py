@@ -17,8 +17,9 @@ def index():
         try:
             home_url = 'https://parivahan.gov.in/rcdlstatus'
             post_url = 'https://parivahan.gov.in/rcdlstatus/vahan/rcDlHome.xhtml'
-            first = request.form['first'].replace(" ","")
-            second = request.form['second'].replace(" ","")
+            vehicle_number = request.form['vehicle_number'].replace(" ","")
+            first = vehicle_number[:6]
+            second = vehicle_number[6:]
 
             r = requests.get(url=home_url)
             cookies = r.cookies
